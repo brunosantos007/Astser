@@ -1,0 +1,154 @@
+/* MENU */
+*{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.menu{
+    text-align: center;
+    margin: auto;
+    background-color: #175972; 
+    font-weight: bold;
+    padding: 10px;
+}
+.menu a{
+    text-decoration: none;
+}
+.empresa p{
+    margin: 15px;
+}
+#logo img{
+    width: 60px;
+}
+
+.itens{
+    display: none;
+    text-align: center;
+    list-style-type: none;
+    flex-direction: column;
+}
+.itens li:hover{
+    background-color: #34bcee3f; 
+}
+.itens-2{
+    display: none;
+    text-align: center;
+    list-style-type: none;
+    flex-direction: column;
+}
+.itens li{
+    padding: 10px;
+}
+/* CONTEUDO PRINCIPAL */
+
+.content{
+    display: flex;
+    min-height: 350px;
+    
+}
+.div-content{
+    display: flex;
+    width: 100%;
+    background-image: url("images/global-connections-background-for-social-media-banner.jpg");
+    background-size: cover;
+    background-position: left;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 15px;
+}
+#title-content{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#paragraph-content p{
+    margin-right: 150px;
+}
+.btn-content{
+    margin-top: 30px;
+    
+}
+.btn{
+    background-color: #175972;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    width: 10px;
+    margin: 10px;
+}
+.btn:hover{
+    background-color: #34bcee3f;
+    color: rgb(255, 255, 0);
+    font-weight: bold;
+    transition: 1s;
+}
+
+/* RESPONSIVIDADE MENU */
+
+@media (min-width:700px) {
+    .traco{
+        width: 1px;
+        height: 50px;
+        margin-left: 10px;
+        background-color: white;
+    }
+    .empresa{
+        display: flex;
+        align-items: center;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        font-size: 15px;
+        align-items: center;
+        padding: 10px;
+    }
+    #icon-menu{
+        display: none;
+    } 
+    
+    .itens li{
+        display: none;
+    }
+    .itens-2{
+        display: flex;
+        flex-direction: row;
+    }
+    .itens-2 li{
+        margin: 20px;
+    }
+    .itens-2 a:hover{
+        background-color: #34bcee3f; 
+        border-radius: 15px;
+        transition: 1.0s;
+    }
+}
+@media (min-width:1000px) {
+    .menu{
+        padding: 10px;
+    }
+    .itens-2 li{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .traco{
+        width: 1px;
+        height: 50px;
+        margin-left: 30px;
+        background-color: white;
+    }
+    #logo{
+        margin-left: 10px;
+    }
+}
+@media (min-width:1200px) {
+    .menu{
+        font-size: 17px;
+        padding: 10px;
+    }
+}

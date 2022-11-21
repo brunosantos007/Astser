@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astser</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    
+        <header>
+            <div class="menu">
+                <div class="empresa">
+                    <div id="logo">
+                        <a href="#"><img src="images/imgOrg.jpg" alt=""></a>
+                    </div>
+                    <div class="traco"></div>
+                    <div id="frase">
+                        <p>Soluções Integradas de Telecomunicação</p>
+                    </div>
+                </div>
+                <span id="icon-menu" class="material-symbols-outlined" style="cursor: pointer;" onclick="clickMenu()">menu</span>
+                <div>
+                    <ul id="itens" class="itens">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Soluções</a></li>
+                        <li><a href="#">Clientes</a></li>
+                        <li><a href="#">Contatos</a></li>
+                    </ul>
+                    <ul class="itens-2">
+                        <a href="#">
+                            <li>Inicio</li>
+                        </a>
+                        <a href="#">
+                            <li>Quem somos</li>
+                        </a>
+                        <a href="#">
+                            <li>Soluções</li>
+                        </a>
+                        <a href="#">
+                            <li>Clientes</li>
+                        </a>
+                        <a href="#">
+                            <li>Contatos</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="content">
+                <div class="div-content">
+                    <div id="title-content">
+                        <h2>Bem vindo a AstSer</h2>
+                    </div>
+                    <div id="paragraph-content">
+                        <p>Estamos prontos para oferecer a você soluções na integração de seu sistema de telecomunicação.</p>
+                    </div>
+                    <div class="btn-content">
+                        <a class="btn" href="#">
+                            Contate-nos
+                        </a>
+                        <a class="btn" href="#">
+                            Sobre nós
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+</body>
+<script>
+    function clickMenu(){
+        if(itens.style.display == "flex"){
+            itens.style.display = "none"
+        }else{
+            itens.style.display = "flex"
+        }
+    }
+
+</script>
+</html>
