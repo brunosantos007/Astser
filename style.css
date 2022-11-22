@@ -31,9 +31,16 @@
     display: none;
     list-style-type: none;
     flex-direction: column; 
-    left: -220px;
-    top: 143px;
+    text-align: left;
     position: fixed;
+    background-color: #175972;
+    margin-top: 25px; 
+    height: 100%;
+    padding: 40px;
+    left: 0;
+    /* left: -220px;
+    top: 143px;
+    position: absolute;
     padding: 20px;
     padding-right: 70px;
     height: 100%;
@@ -42,7 +49,7 @@
     background-color: #175972; 
     box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.286);
     transform: translateX(220px);
-    transition: 2s ease; 
+    transition: 2s ease;  */
 } 
 .itens li{
     margin-top: 20px;
@@ -73,7 +80,7 @@
 .div-content{
     display: flex;
     width: 100%;
-    background-image: url("images/global-connections-background-for-social-media-banner.jpg");
+    background-image: url("images/global2.png");
     background-size: cover;
     background-position: left;
     flex-direction: column;
@@ -140,7 +147,10 @@
     #icon-menu{
         display: none;
     } 
-    
+    .itens{
+        position: none;
+        display: none;
+    }
     .itens li{
         display: none;
     }
@@ -160,6 +170,10 @@
 @media (min-width:1000px) {
     .menu{
         padding: 10px;
+    }
+    .itens{
+        position: none;
+        display: none;
     }
     .itens-2 li{
         margin-left: 50px;
