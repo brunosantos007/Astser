@@ -10,7 +10,12 @@
     margin: auto;
     background-color: #175972; 
     font-weight: bold;
-    padding: 10px;
+    margin: auto;
+    padding: 30px;
+    /* MENU FIXO */
+    /* position: fixed;
+    top: 0;
+    z-index: 999; */
 }
 .menu a{
     text-decoration: none;
@@ -24,10 +29,25 @@
 
 .itens{
     display: none;
-    text-align: center;
     list-style-type: none;
-    flex-direction: column;
+    flex-direction: column; 
+    left: -220px;
+    top: 143px;
+    position: fixed;
+    padding: 20px;
+    padding-right: 70px;
+    height: 100%;
+    margin-top: 40px;
+    text-align: left;
+    background-color: #175972; 
+    box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.286);
+    transform: translateX(220px);
+    transition: 2s ease; 
+} 
+.itens li{
+    margin-top: 20px;
 }
+
 .itens li:hover{
     background-color: #34bcee3f; 
 }
@@ -39,6 +59,9 @@
 }
 .itens li{
     padding: 10px;
+}
+#icon-menu{
+    float: left;
 }
 /* CONTEUDO PRINCIPAL */
 
@@ -67,19 +90,25 @@
 }
 .btn-content{
     margin-top: 30px;
-    
 }
 .btn{
+    display: inline-block;
     background-color: #175972;
     padding: 10px;
-    padding-left: 35px;
-    padding-right: 35px;
-    border-radius: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
     border: none;
     text-decoration: none;
     font-weight: bold;
-    width: 10px;
-    margin: 10px;
+    text-align: center;
+    margin: 6px;
+    max-width: 19%;
+    font-size: 13px;
+    
+}
+.btn a{
+    text-decoration: none;
 }
 .btn:hover{
     background-color: #34bcee3f;
@@ -150,5 +179,14 @@
     .menu{
         font-size: 17px;
         padding: 10px;
+    }
+}
+/* RESPONSIVIDADE CONTENT */
+
+@media (min-width:1500px) {
+    .div-content{
+        align-items: center;
+        text-align: left;
+        
     }
 }

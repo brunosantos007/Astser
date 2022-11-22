@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 <body>
     
         <header>
-            <div class="menu">
+            <div class="menu active">
                 <div class="empresa">
                     <div id="logo">
                         <a href="#"><img src="images/imgOrg.jpg" alt=""></a>
@@ -24,15 +25,17 @@
                         <p>Soluções Integradas de Telecomunicação</p>
                     </div>
                 </div>
-                <span id="icon-menu" class="material-symbols-outlined" style="cursor: pointer;" onclick="clickMenu()">menu</span>
+                <div><span id="icon-menu" class="material-symbols-outlined" style="cursor: pointer;" onclick="clickMenu()">menu</span></div>
                 <div>
-                    <ul id="itens" class="itens">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Quem somos</a></li>
-                        <li><a href="#">Soluções</a></li>
-                        <li><a href="#">Clientes</a></li>
-                        <li><a href="#">Contatos</a></li>
-                    </ul>
+                    <div>
+                        <ul id="itens" class="itens">
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Quem somos</a></li>
+                            <li><a href="#">Soluções</a></li>
+                            <li><a href="#">Clientes</a></li>
+                            <li><a href="#">Contatos</a></li>
+                        </ul>
+                    </div>
                     <ul class="itens-2">
                         <a href="#">
                             <li>Inicio</li>
@@ -64,12 +67,16 @@
                         <p>Estamos prontos para oferecer a você soluções na integração de seu sistema de telecomunicação.</p>
                     </div>
                     <div class="btn-content">
-                        <a class="btn" href="#">
-                            Contate-nos
-                        </a>
-                        <a class="btn" href="#">
-                            Sobre nós
-                        </a>
+                        <div class="btn">
+                            <a  href="#">
+                                Contate-nos
+                            </a>
+                        </div>
+                        <div class="btn">
+                            <a  href="#">
+                                Sobre nós
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
