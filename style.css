@@ -2,7 +2,6 @@
 *{
     padding: 0px;
     margin: 0px;
-    color: white;
     font-family: 'Roboto', sans-serif;
 }
 .menu{
@@ -14,6 +13,7 @@
     padding: 30px;
     box-sizing: border-box;
     width: 100%;
+    color: white;
     /* MENU FIXO */
     position: fixed;
     top: 0;
@@ -21,6 +21,7 @@
 }
 .menu a{
     text-decoration: none;
+    color: white;
 }
 .empresa p{
     margin: 15px;
@@ -72,7 +73,7 @@
 #icon-menu{
     float: left;
 }
-/* CONTEUDO PRINCIPAL */
+/* BEM-VINDO A ASTSER */
 
 .content{
     display: flex;
@@ -93,13 +94,33 @@
 #title-content{
     margin-bottom: 20px;
     font-weight: bold;
+    color: white;
+}
+#title-content span{
+    color: #175972;
+    font-weight: bold;
 }
 #paragraph-content p{
     margin-right: 150px;
+    color: rgba(255, 255, 255, 0.797);
 }
 .btn-content{
     margin-top: 30px;
 }
+.btn-content div:nth-child(2){
+    background-color: white;
+}
+.btn-content div:nth-child(2) a{
+    color: #175972;
+}
+.btn-content div:nth-child(2):hover{
+    background-color: #34bcee3f;
+    
+}
+.btn-content div:nth-child(2) a:hover{
+    color: white;
+}
+
 .btn{
     display: inline-block;
     background-color: #175972;
@@ -112,18 +133,33 @@
     font-weight: bold;
     text-align: center;
     margin: 6px;
-    max-width: 20%;
-    font-size: 13px;
-    
+    max-width: 25%;
+    font-size: 12px;
+    cursor: pointer;
 }
 .btn a{
     text-decoration: none;
+    color: white;
 }
 .btn:hover{
     background-color: #34bcee3f;
     color: rgb(255, 255, 0);
     font-weight: bold;
     transition: 1s;
+} 
+/* QUEM SOMOS */
+
+.who-we{
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/Android-bro.png);
+    background-size: cover;
+    width: 100%;
+    min-height: 400px;
+    justify-content: center;
+}
+.who-content{
+    
 }
 
 /* RESPONSIVIDADE MENU */
@@ -203,9 +239,22 @@
 /* RESPONSIVIDADE CONTENT */
 
 @media (min-width:1500px) {
+    .content{
+        min-height: 500px;
+    }
     .div-content{
         align-items: center;
-        text-align: left;
+    }
+    .btn{
+       font-size: 17px;
         
+    }
+    .words-content{
+        width: 50%;
+        display: flex;
+        font-size: 25px;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 500px;
     }
 }
