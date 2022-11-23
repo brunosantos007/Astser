@@ -164,8 +164,6 @@
 .who-img img{
     width: 100%;
 }
-
-
 /* RESPONSIVIDADE MENU */
 
 @media (min-width:700px) {
@@ -213,7 +211,7 @@
     }
 }
 @media (min-width:1000px) {
-    
+    /* MENU */
     .itens{
         position: none;
         display: none;
@@ -230,6 +228,20 @@
     }
     #logo{
         margin-left: 10px;
+    }
+    /*  QUEM SOMOS */
+    .who-we{
+        display: flex;
+    }
+    .who-content{
+        display: flex;
+        flex-direction: column;
+        
+        padding-top: 100px;
+        font-size: 20px;
+    }
+    .who-img img{
+        min-width: 50%;
     }
 }
 @media (min-width:1200px) {
@@ -258,5 +270,14 @@
         flex-direction: column;
         justify-content: center;
         margin-right: 500px;
+    }
+    .who-img{
+        width: 1200px;
+    }
+    .who-img img{
+        width: 600px;
+    }
+    .who-content{
+        margin-left: 375px;
     }
 }
