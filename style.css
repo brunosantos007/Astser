@@ -10,7 +10,7 @@
     background-color: #175972; 
     font-weight: bold;
     margin: auto;
-    padding: 30px;
+    padding: 15px;
     box-sizing: border-box;
     width: 100%;
     color: white;
@@ -78,7 +78,7 @@
 .content{
     display: flex;
     min-height: 350px;
-    margin-top: 200px;
+    margin-top: 170px;
 }
 .div-content{
     display: flex;
@@ -115,12 +115,10 @@
 }
 .btn-content div:nth-child(2):hover{
     background-color: #34bcee3f;
-    
 }
 .btn-content div:nth-child(2) a:hover{
     color: white;
 }
-
 .btn{
     display: inline-block;
     background-color: #175972;
@@ -150,17 +148,23 @@
 /* QUEM SOMOS */
 
 .who-we{
-    display: flex;
-    flex-direction: column;
-    background-image: url(images/Android-bro.png);
-    background-size: cover;
-    width: 100%;
-    min-height: 400px;
-    justify-content: center;
-}
-.who-content{
+    color: rgb(0, 0, 0);
+    text-align: left;
     
 }
+.who-content{
+    padding-left: 15px;
+    margin: 10px;
+}
+.who-content h2{
+    font-weight: bold;
+    color: #175972;
+    margin-bottom: 20px;
+}
+.who-img img{
+    width: 100%;
+}
+
 
 /* RESPONSIVIDADE MENU */
 
@@ -209,9 +213,7 @@
     }
 }
 @media (min-width:1000px) {
-    .menu{
-        padding: 10px;
-    }
+    
     .itens{
         position: none;
         display: none;
