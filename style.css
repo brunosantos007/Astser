@@ -169,7 +169,9 @@
     flex-direction: column;
     text-align: left;
     padding-left: 15px;
+    padding: 20px;
     color: rgb(0, 0, 0);
+    background-color: rgba(128, 128, 128, 0.126);
 }
 .solucoes h2{
     font-weight: bold;
@@ -200,8 +202,32 @@
 }
 .icon-img img{
    max-width: 90px;
-
 }
+/* CLIENTES */
+.clients{
+    padding-left: 15px;
+    margin-top: 25px;
+}
+#title-clients{
+    text-align: left;
+    font-weight: bold;
+    color: #175972;
+}
+.card-client{
+    display: flex;
+    flex-direction: column;
+}
+.img-clients{
+    margin: auto;
+    margin-top: 50px;
+}
+.img-clients img{
+    display: flex;
+    width: 160px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
 /* RESPONSIVIDADE MENU */
 
 @media (min-width:700px) {
@@ -274,8 +300,7 @@
     .who-content{
         display: flex;
         flex-direction: column;
-        
-        padding-top: 100px;
+        padding-top: 20px;
         font-size: 20px;
     }
     .who-img img{
@@ -287,6 +312,50 @@
         font-size: 17px;
         padding: 10px;
     }
+    .solucoes{
+        font-size: 20px;
+        align-items: center;
+    }
+    .solucoes-content{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .solucoes-itens{
+        margin: 23px;
+        width: 25%;
+        font-size: 17px;
+    }
+    .solucoes-exp{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        margin-right: 500px;
+    }
+    .card-client{
+        align-items: center;
+    }
+    .client-content{
+        display: flex;
+        justify-content: center;
+        margin: 23px;
+    }
+    #title-clients{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        margin-right: 500px;
+        font-size: 23px;
+    }
+    .img-clients{
+        width: 20%;
+        display: flex;
+        margin: 25px;
+        flex-direction: column;
+    }
+    /* .img-clients:first-child img{
+        margin-bottom: 120px;
+    } */
 }
 /* RESPONSIVIDADE CONTENT */
 
@@ -316,6 +385,10 @@
         width: 600px;
     }
     .who-content{
-        margin-left: 395px;
+        margin-left: 385px;
+
+    }
+    .solucoes-itens{
+        width: 15%;
     }
 }
