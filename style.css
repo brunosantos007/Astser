@@ -313,6 +313,18 @@
     .who-img img{
         min-width: 50%;
     }
+    /* FOOTER */
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+    .footer-space1{
+        width: 50%;
+    }
+    .footer-space2{
+        width: 50%;
+    }
 }
 @media (min-width:1200px) {
     .menu{

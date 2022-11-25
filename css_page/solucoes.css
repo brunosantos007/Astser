@@ -1,0 +1,13 @@
+.solucoes{
+    margin-top: 196px;
+}
+@media (min-width:350px) {
+    .solucoes{
+        margin-top: 195px;
+    }
+}
+@media (min-width:700px) {
+    .solucoes{
+        margin-top: 90px;
+    }
+} 
