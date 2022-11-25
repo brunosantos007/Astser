@@ -29,7 +29,6 @@
 #logo img{
     width: 60px;
 }
-
 .itens{
     display: none;
     list-style-type: none;
@@ -41,18 +40,6 @@
     height: 100%;
     padding: 40px;
     left: 0;
-    /* left: -220px;
-    top: 143px;
-    position: absolute;
-    padding: 20px;
-    padding-right: 70px;
-    height: 100%;
-    margin-top: 40px;
-    text-align: left;
-    background-color: #175972; 
-    box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.286);
-    transform: translateX(220px);
-    transition: 2s ease;  */
 } 
 .itens li{
     margin-top: 20px;
@@ -207,6 +194,9 @@
     padding-left: 15px;
     margin-top: 25px;
 }
+.client-content{
+    margin-bottom: 100px;
+}
 #title-clients{
     text-align: left;
     font-weight: bold;
@@ -220,11 +210,29 @@
     margin: auto;
     margin-top: 50px;
 }
+.img-clients.space p{
+    margin-bottom: 18px;
+}
 .img-clients img{
     display: flex;
     width: 160px;
     margin: auto;
     padding-bottom: 40px;
+}
+/* FOOTER */
+
+.footer{
+    display: flex;
+    background-color: #175972;
+    color: white;
+    padding: 20px;
+    justify-content: center;
+}
+.footer-info{
+    padding: 10px;
+}
+.footer-info h4{
+    margin-bottom: 10px;
 }
 
 /* RESPONSIVIDADE MENU */
@@ -318,6 +326,7 @@
     .solucoes-content{
         flex-direction: row;
         justify-content: center;
+        padding-bottom: 100px;
     }
     .solucoes-itens{
         margin: 23px;
@@ -337,14 +346,14 @@
     .client-content{
         display: flex;
         justify-content: center;
-        margin: 23px;
     }
     #title-clients{
         display: flex;
         flex-direction: row;
         width: 50%;
         margin-right: 500px;
-        font-size: 23px;
+        font-size: 20px;
+        margin-bottom: 50px;
     }
     .img-clients{
         width: 20%;
@@ -352,9 +361,6 @@
         margin: 25px;
         flex-direction: column;
     }
-    /* .img-clients:first-child img{
-        margin-bottom: 120px;
-    } */
 }
 /* RESPONSIVIDADE CONTENT */
 
@@ -385,7 +391,6 @@
     }
     .who-content{
         margin-left: 385px;
-
     }
     .solucoes-itens{
         width: 15%;
