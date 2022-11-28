@@ -21,7 +21,7 @@
             <div class="menu active">
                 <div class="empresa">
                     <div id="logo">
-                        <a href="#"><img src="../images/imgOrg.jpg" alt=""></a>
+                        <a href="../index.html"><img src="../images/imgOrg.jpg" alt=""></a>
                     </div>
                     <div class="traco"></div>
                     <div id="frase">
@@ -76,17 +76,24 @@
                     <h2>Contato</h2>
                 </div>
                 <div class="form-form">
-                    <form action="mailto:" method="POST" enctype="text/plain">
-                        <p>Nome:</p>
-                        <input type="text" placeholder="Insira seu Nome" required>
-                        <p>E-mail:</p>
-                        <input type="email" placeholder="Insira seu E-mail" required>
-                        <p>Assunto:</p>
-                        <input type="text" placeholder="Insira seu Assunto" required>
-                        <p>Mensagem:</p>
-                        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-                        <input type="submit">
-                        <input type="reset" value="Limpar">
+                    <form action="https://formsubmit.co/contact@astser.com" method="POST">
+                        <div class="form-text">
+                            <p class="form-space">Nome:</p>
+                            <input type="text" name="nome" placeholder="Insira seu Nome" required>
+                            <p class="form-space">E-mail:</p>
+                            <input type="email" name="email" placeholder="Insira seu E-mail" required>
+                            <p class="form-space">Assunto:</p>
+                            <input type="text" name="assunto" placeholder="Insira seu Assunto" required>
+                            <p>Mensagem:</p>
+                            <textarea cols="30" rows="10" name="mensagem" placeholder="Insira sua Mensagem"></textarea>
+                            <div class="form-btn">
+                                <input type="submit">
+                                <input type="reset" value="Limpar">
+                            </div>
+                        </div>
+                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="false">
                     </form>
                 </div>
             </div>

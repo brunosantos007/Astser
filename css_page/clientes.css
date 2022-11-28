@@ -1,3 +1,9 @@
-.clients{
-    margin-top: 220px;
+#title-clients{
+    margin-top: 200px;
+}
+
+@media (min-width:700px) {
+    #title-clients{
+        margin-top: 130px;
+    }
 }
